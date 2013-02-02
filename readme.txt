@@ -45,3 +45,6 @@ Select the project "WP Plugin: Scheduled Jobs Dashboad Widget" and report it.
 = 0.1 =
 First version.
 
+= 0.2 =
+0000017: widget translatable
+

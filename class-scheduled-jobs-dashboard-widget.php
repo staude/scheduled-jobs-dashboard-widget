@@ -22,17 +22,22 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
 
     function __construct() {
         add_action( 'wp_dashboard_setup', array( $this, 'registerWidget' ) );
+        add_action( 'plugins_loaded',     array( $this, 'load_translations' ) );
     }
     /**
      * Register the widget
      */
     function registerWidget () {
         wp_add_dashboard_widget( 'z8n_fs_scheduled_jobs_dashboard_widget',
-                                 'Scheduled Jobs',
+                                 __( 'Scheduled Jobs', 'scheduled-jobs-dashboard-widget' ),
                                  array( $this,
                                         'scheduled_jobs_widget' )
                                );
         
+    }
+    
+    function load_translations() {
+        load_plugin_textdomain( 'scheduled-jobs-dashboard-widget', false, dirname( plugin_basename( __FILE__ )) . '/languages/'  ); 
     }
     
     /**
@@ -45,9 +50,9 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
     ?>    
 <table>
     <tr>
-        <th scope="col">Next Run (UTC)</th>
-        <th scope="col">Schedule</th>
-        <th scope="col">Hook</th>
+        <th scope="col"><?php _e( 'Next Run (UTC)', 'scheduled-jobs-dashboard-widget' ); ?></th>
+        <th scope="col"><?php _e( 'Schedule', 'scheduled-jobs-dashboard-widget' ); ?></th>
+        <th scope="col"><?php _e( 'Hook', 'scheduled-jobs-dashboard-widget' ); ?></th>
     </tr>
     <tbody>
     <?php foreach ( $cron as $timestamp => $cronhooks) { ?>
@@ -59,7 +64,7 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
                 <?php if ($event ['schedule'] ) {
                     echo $schedules[$event['schedule']]['display'];
                 } else {
-                    echo 'once';
+                    _e ( 'once', 'scheduled_jobs_dashboard_widget' );
                 } ?>
                 </td>
                 <td><?php echo $hook; ?></td>
