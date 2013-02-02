@@ -29,7 +29,7 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
      */
     function registerWidget () {
         wp_add_dashboard_widget( 'z8n_fs_scheduled_jobs_dashboard_widget',
-                                 __( 'Scheduled Jobs', 'scheduled-jobs-dashboard-widget' ),
+                                 apply_filters ( 'scheduled_jobs_dashboard_widget_title', __( 'Scheduled Jobs', 'scheduled-jobs-dashboard-widget' ) ),
                                  array( $this,
                                         'scheduled_jobs_widget' )
                                );
@@ -50,9 +50,9 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
     ?>    
 <table>
     <tr>
-        <th scope="col"><?php _e( 'Next Run (UTC)', 'scheduled-jobs-dashboard-widget' ); ?></th>
-        <th scope="col"><?php _e( 'Schedule', 'scheduled-jobs-dashboard-widget' ); ?></th>
-        <th scope="col"><?php _e( 'Hook', 'scheduled-jobs-dashboard-widget' ); ?></th>
+        <th scope="col"><?php echo apply_filters ( 'scheduled_jobs_dashboard_widget_next_run', __( 'Next Run (UTC)', 'scheduled-jobs-dashboard-widget' ) ); ?></th>
+        <th scope="col"><?php echo apply_filters ( 'scheduled_jobs_dashboard_widget_schedule', __( 'Schedule', 'scheduled-jobs-dashboard-widget' ) ); ?></th>
+        <th scope="col"><?php echo apply_filters ( 'scheduled_jobs_dashboard_widget_hook', __( 'Hook', 'scheduled-jobs-dashboard-widget' ) ); ?></th>
     </tr>
     <tbody>
     <?php foreach ( $cron as $timestamp => $cronhooks) { ?>
@@ -64,7 +64,7 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
                 <?php if ($event ['schedule'] ) {
                     echo $schedules[$event['schedule']]['display'];
                 } else {
-                    _e ( 'once', 'scheduled_jobs_dashboard_widget' );
+                    echo apply_filters ('scheduled_jobs_dashboard_widget_once', __( 'once', 'scheduled_jobs_dashboard_widget' ) );
                 } ?>
                 </td>
                 <td><?php echo $hook; ?></td>
