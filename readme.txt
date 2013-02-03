@@ -12,11 +12,24 @@ The dashboard widget shows the next jobs from the wordpress scheduler.
 
 == Description ==
 
+English:
+
 This plugin implements a new widget to use in the dashboard.
 The widget shows the next jobs from the wordpress scheduler.
 
+If they have more translations for this plugin, please send email to frank@staude.net, I will then install.
+
 Entrys in the changelog with numbers means the ticket id on
 http://bugs.staude.net
+
+Deutsch:
+
+Dieses Plugin stellt ein Widget für das Dashbord bereit, das die nächsten Aufträge des in Wordpress eingebauten Cron anzeigt.
+
+Wenn sie weitere Übersetzungen für dieses Plugin haben, bitte per E-Mail an frank@staude.net schicken, ich werde sie dann einbauen.
+
+Einträge im changelog mit Zahlen verweisen auf die Ticket ID auf http://bugs.staude.net
+
 
 == Installation ==
 
@@ -25,6 +38,12 @@ http://bugs.staude.net
 3. Use the widget in the dashboard.
 
 == Frequently Asked Questions ==
+
+English:
+
+= I have a new translation =
+
+Send them by e-mail to frank@staude.net, I will then install the next update with.
 
 = I found a bug  =
 
@@ -36,16 +55,35 @@ Select the project "WP Plugin: Scheduled Jobs Dashboad Widget" and report it.
 Please report it at http://bugs.staude.net
 Select the project "WP Plugin: Scheduled Jobs Dashboad Widget" and report it.
 
+
+Deutsch:
+
+= Ich habe eine neue Übersetzung fertiggestellt =
+
+Schick sie mir per e-mail an frank@staude.net, ich werde sie dann beim nächsten Update mit einbauen
+Ich habe einen Fehler gefunden
+
+= Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an. =
+
+Wähle das Projekt "WP Plugin: Disable Title" und melde den Fehler.
+Ich möchte eine neue Funktion vorschlage
+
+= Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an. =
+
+Wähle das Projekt "WP Plugin: Scheduled Jobs Dashboad Widget" und trag deinen Wunsch ein.
+
+
 == Screenshots ==
 1. Dashboard Widget
 
 
 == Changelog ==
 
-= 0.1 =
-First version.
-
 = 0.2 =
-0000017: widget translatable
-0000018: Output changed by filters
+- 0000017: widget translatable
+- 0000018: Output changed by filters
+- Tested up to: 3.5.1
+
+= 0.1 =
+- First version.
 
