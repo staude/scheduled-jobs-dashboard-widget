@@ -3,10 +3,10 @@
 Plugin Name: scheduled jobs dashboard widget
 Plugin URI: http://staude.net/wordpress/plugins/ScheduledJobsDashboardWidget
 Description: Implements a Widget to show the Wordpress Cronjobs in the Dashboard
-Text Domain: z8n_fs_scheduled_jobs_dashboard_widget
+Text Domain: scheduled_jobs_dashboard_widget
 Domain Path: languages
 Author: Frank Staude
-Version: 0.1
+Version: 0.2.1
 Author URI: http://www.staude.net/
 Compatibility: WordPress 3.5
 */

@@ -1,4 +1,4 @@
-=== Scheduled Jobs Dashboad Widget ===
+﻿=== Scheduled Jobs Dashboad Widget ===
 Contributors:f.staude
 Donate link: http://www.staude.net/donate
 Tags: widgets, dashboard, cron, schedule, jobs
@@ -61,9 +61,10 @@ Deutsch:
 = Ich habe eine neue Übersetzung fertiggestellt =
 
 Schick sie mir per e-mail an frank@staude.net, ich werde sie dann beim nächsten Update mit einbauen
-Ich habe einen Fehler gefunden
 
-= Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an. =
+= Ich habe einen Fehler gefunden =
+
+Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an.
 
 Wähle das Projekt "WP Plugin: Disable Title" und melde den Fehler.
 Ich möchte eine neue Funktion vorschlage
@@ -78,6 +79,10 @@ Wähle das Projekt "WP Plugin: Scheduled Jobs Dashboad Widget" und trag deinen W
 
 
 == Changelog ==
+
+= 0.2.1 =
+- readme typo
+- wrong version referenced in mainfile.
 
 = 0.2 =
 - 0000017: widget translatable
