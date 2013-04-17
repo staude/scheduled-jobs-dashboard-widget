@@ -2,20 +2,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: scheduled jobs dashboard widget v0.2.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-02 23:27+0100\n"
-"PO-Revision-Date: 2013-04-17 12:39:21+0000\n"
-"Last-Translator: Frank Staude <frank@staude.net>\n"
-"Language-Team: frank@staude.net <frank@staude.net>\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-04-17 12:39:37+0000\n"
+"Last-Translator: admin <frank@staude.net>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.4\n"
-"X-Poedit-Language: \n"
-"X-Poedit-Country: \n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
-"X-Poedit-Basepath: C:/wamp/www/plugin/wp-content/plugins/scheduled-jobs-dashboard-widget/\n"
+"X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
@@ -23,17 +23,17 @@ msgstr ""
 #: class-scheduled-jobs-dashboard-widget.php:32
 #@ scheduled-jobs-dashboard-widget
 msgid "Scheduled Jobs"
-msgstr "Wiederkehrende Aufgaben"
+msgstr "Scheduled Jobs"
 
 #: class-scheduled-jobs-dashboard-widget.php:53
 #@ scheduled-jobs-dashboard-widget
 msgid "Next Run (UTC)"
-msgstr "Nächster Aufruf (UTC)"
+msgstr "Next Run (UTC)"
 
 #: class-scheduled-jobs-dashboard-widget.php:54
 #@ scheduled-jobs-dashboard-widget
 msgid "Schedule"
-msgstr "Intervall"
+msgstr "Schedule"
 
 #: class-scheduled-jobs-dashboard-widget.php:55
 #@ scheduled-jobs-dashboard-widget
@@ -43,7 +43,7 @@ msgstr "Hook"
 #: class-scheduled-jobs-dashboard-widget.php:67
 #@ scheduled-jobs-dashboard-widget
 msgid "once"
-msgstr "einmalig"
+msgstr "once"
 
 #. translators: plugin header field 'Name'
 #: scheduled-jobs-dashboard-widget.php:0
@@ -61,19 +61,19 @@ msgstr ""
 #: scheduled-jobs-dashboard-widget.php:0
 #@ scheduled-jobs-dashboard-widget
 msgid "Implements a Widget to show the Wordpress Cronjobs in the Dashboard"
-msgstr "Dieses Plugin stellt ein Widget für das Dashbord bereit, das die nächsten Aufträge des in Wordpress eingebauten Cron anzeigt."
+msgstr ""
 
 #. translators: plugin header field 'Author'
 #: scheduled-jobs-dashboard-widget.php:0
 #@ scheduled-jobs-dashboard-widget
 msgid "Frank Staude"
-msgstr "Frank Staude"
+msgstr ""
 
 #. translators: plugin header field 'AuthorURI'
 #: scheduled-jobs-dashboard-widget.php:0
 #@ scheduled-jobs-dashboard-widget
 msgid "http://www.staude.net/"
-msgstr "http://www.staude.net/"
+msgstr ""
 
 #. translators: plugin header field 'Version'
 #: scheduled-jobs-dashboard-widget.php:0
