@@ -4,7 +4,7 @@ Donate link: http://www.staude.net/donate
 Tags: widgets, dashboard, cron, schedule, jobs
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,7 +66,7 @@ Schick sie mir per e-mail an frank@staude.net, ich werde sie dann beim nächsten
 
 Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an.
 
-Wähle das Projekt "WP Plugin: Disable Title" und melde den Fehler.
+Wähle das Projekt "WP Plugin: Scheduled Jobs Dashboad Widget" und melde den Fehler.
 Ich möchte eine neue Funktion vorschlage
 
 = Bitte geh auf die Seite http://bugs.staude.net und melde dich dort an. =
@@ -83,6 +83,7 @@ Wähle das Projekt "WP Plugin: Scheduled Jobs Dashboad Widget" und trag deinen W
 = 0.2.1 =
 - readme typo
 - wrong version referenced in mainfile.
+- correct translations to edit it with codestyling-localization plugin
 
 = 0.2 =
 - 0000017: widget translatable

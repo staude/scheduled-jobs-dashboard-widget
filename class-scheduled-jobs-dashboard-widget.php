@@ -64,7 +64,7 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
                 <?php if ($event ['schedule'] ) {
                     echo $schedules[$event['schedule']]['display'];
                 } else {
-                    echo apply_filters ('scheduled_jobs_dashboard_widget_once', __( 'once', 'scheduled_jobs_dashboard_widget' ) );
+                    echo apply_filters ('scheduled_jobs_dashboard_widget_once', __( 'once', 'scheduled-jobs-dashboard-widget' ) );
                 } ?>
                 </td>
                 <td><?php echo $hook; ?></td>
