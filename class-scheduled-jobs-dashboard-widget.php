@@ -1,6 +1,6 @@
 <?php
 
-/*  Copyright 2012  Frank Staude  (email : frank@staude.net)
+/*  Copyright 2012-2013  Frank Staude  (email : frank@staude.net)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,29 +21,29 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 class z8n_fs_scheduled_jobs_dashboard_widget {
 
     function __construct() {
-        add_action( 'wp_dashboard_setup', array( $this, 'registerWidget' ) );
-        add_action( 'plugins_loaded',     array( $this, 'load_translations' ) );
+        add_action( 'wp_dashboard_setup', array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'registerWidget' ) );
+        add_action( 'plugins_loaded',     array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'load_translations' ) );
     }
     /**
      * Register the widget
      */
-    function registerWidget () {
+    static public function registerWidget () {
         wp_add_dashboard_widget( 'z8n_fs_scheduled_jobs_dashboard_widget',
                                  apply_filters ( 'scheduled_jobs_dashboard_widget_title', __( 'Scheduled Jobs', 'scheduled-jobs-dashboard-widget' ) ),
-                                 array( $this,
+                                 array( 'z8n_fs_scheduled_jobs_dashboard_widget',
                                         'scheduled_jobs_widget' )
                                );
         
     }
     
-    function load_translations() {
+    static public function load_translations() {
         load_plugin_textdomain( 'scheduled-jobs-dashboard-widget', false, dirname( plugin_basename( __FILE__ )) . '/languages/'  ); 
     }
     
     /**
      * the widget content
      */
-    function scheduled_jobs_widget() {
+    static public function scheduled_jobs_widget() {
         $cron = _get_cron_array();
         $schedules = wp_get_schedules();
         $date_format = 'M j, Y @ G:i';
@@ -59,12 +59,12 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
         <?php foreach ( (array) $cronhooks as $hook => $events ) { ?>
             <?php foreach ( (array) $events as $event ) { ?>
             <tr>
-                <td><?php echo date_i18n ( $date_format, wp_next_scheduled($hook) ); ?></td>
+                <td><?php echo date_i18n ( $date_format, wp_next_scheduled( $hook ) ); ?></td>
                 <td>
-                <?php if ($event ['schedule'] ) {
-                    echo $schedules[$event['schedule']]['display'];
+                <?php if ($event [ 'schedule' ] ) {
+                    echo $schedules[ $event[ 'schedule' ]][ 'display' ];
                 } else {
-                    echo apply_filters ('scheduled_jobs_dashboard_widget_once', __( 'once', 'scheduled-jobs-dashboard-widget' ) );
+                    echo apply_filters ( 'scheduled_jobs_dashboard_widget_once', __( 'once', 'scheduled-jobs-dashboard-widget' ) );
                 } ?>
                 </td>
                 <td><?php echo $hook; ?></td>
@@ -78,5 +78,3 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
     <?php
     }
 }
-
-?>
