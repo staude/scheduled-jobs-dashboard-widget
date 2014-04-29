@@ -3,8 +3,8 @@ Contributors:f.staude
 Donate link: http://www.staude.net/donate
 Tags: widgets, dashboard, cron, schedule, jobs
 Requires at least: 3.0
-Tested up to: 3.7.1
-Stable tag: 0.3
+Tested up to: 3.9
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,8 +77,13 @@ Wähle das Projekt "WP Plugin: Scheduled Jobs Dashboad Widget" und trag deinen W
 == Screenshots ==
 1. Dashboard Widget
 
+2. Entry in the "At A Glance" Widget
+
 
 == Changelog ==
+
+= 0.4 =
+- Add a icon/entry to the "At A Glance" Widget
 
 = 0.3 =
 - Disable some php notices if WP Debug active

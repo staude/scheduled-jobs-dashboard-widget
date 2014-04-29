@@ -6,12 +6,12 @@ Description: Implements a Widget to show the Wordpress Cronjobs in the Dashboard
 Text Domain: scheduled-jobs-dashboard-widget
 Domain Path: languages
 Author: Frank Staude
-Version: 0.3
+Version: 0.4
 Author URI: http://www.staude.net/
-Compatibility: WordPress 3.7.1
+Compatibility: WordPress 3.9
 */
 
-/*  Copyright 2012-2013  Frank Staude  (email : frank@staude.net)
+/*  Copyright 2012-2014  Frank Staude  (email : frank@staude.net)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

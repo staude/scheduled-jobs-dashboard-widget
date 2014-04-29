@@ -1,6 +1,6 @@
 <?php
 
-/*  Copyright 2012-2013  Frank Staude  (email : frank@staude.net)
+/*  Copyright 2012-2014  Frank Staude  (email : frank@staude.net)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -23,7 +23,29 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
     function __construct() {
         add_action( 'wp_dashboard_setup', array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'registerWidget' ) );
         add_action( 'plugins_loaded',     array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'load_translations' ) );
+        // WP > 3.8   if (wp_version_check($extra_stats)) {
+            add_action( 'dashboard_glance_items', array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'dashboard_glance_items' ) );
+        //}
     }
+    
+    /**
+     * 
+     */
+    static public function dashboard_glance_items() {
+        $cron = _get_cron_array();
+        $count = 0;
+        foreach ( $cron as $timestamp => $cronhooks) { 
+            foreach ( (array) $cronhooks as $hook => $events ) { 
+                foreach ( (array) $events as $event ) {
+                    $count++;
+                }
+            }
+        }
+        echo '<li class="scheduledjobs"><a>';
+        echo sprintf(__('%s Scheduled jobs', 'scheduled-jobs-dashboard-widget'), $count );
+        echo '</a></li>';
+    }
+    
     /**
      * Register the widget
      */
@@ -33,6 +55,8 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
                                  array( 'z8n_fs_scheduled_jobs_dashboard_widget',
                                         'scheduled_jobs_widget' )
                                );
+        wp_enqueue_style( 'scheduled-jobs-widget', plugin_dir_url( __FILE__) . 'css/style.css' );
+    
         
     }
     
