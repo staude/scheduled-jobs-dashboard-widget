@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: scheduled jobs dashboard widget v0.2.2\n"
+"Project-Id-Version: scheduled jobs dashboard widget v0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-04-17 12:39:37+0000\n"
+"PO-Revision-Date: 2014-04-29 15:49:26+0000\n"
 "Last-Translator: admin <frank@staude.net>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,27 +20,27 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: class-scheduled-jobs-dashboard-widget.php:32
+#: class-scheduled-jobs-dashboard-widget.php:54
 #@ scheduled-jobs-dashboard-widget
 msgid "Scheduled Jobs"
 msgstr "Scheduled Jobs"
 
-#: class-scheduled-jobs-dashboard-widget.php:53
+#: class-scheduled-jobs-dashboard-widget.php:77
 #@ scheduled-jobs-dashboard-widget
 msgid "Next Run (UTC)"
 msgstr "Next Run (UTC)"
 
-#: class-scheduled-jobs-dashboard-widget.php:54
+#: class-scheduled-jobs-dashboard-widget.php:78
 #@ scheduled-jobs-dashboard-widget
 msgid "Schedule"
 msgstr "Schedule"
 
-#: class-scheduled-jobs-dashboard-widget.php:55
+#: class-scheduled-jobs-dashboard-widget.php:79
 #@ scheduled-jobs-dashboard-widget
 msgid "Hook"
 msgstr "Hook"
 
-#: class-scheduled-jobs-dashboard-widget.php:67
+#: class-scheduled-jobs-dashboard-widget.php:91
 #@ scheduled-jobs-dashboard-widget
 msgid "once"
 msgstr "once"
@@ -75,9 +75,15 @@ msgstr ""
 msgid "http://www.staude.net/"
 msgstr ""
 
+#: class-scheduled-jobs-dashboard-widget.php:45
+#, php-format
+#@ scheduled-jobs-dashboard-widget
+msgid "%s Scheduled jobs"
+msgstr "%s Scheduled jobs"
+
 #. translators: plugin header field 'Version'
 #: scheduled-jobs-dashboard-widget.php:0
 #@ scheduled-jobs-dashboard-widget
-msgid "0.2.2"
+msgid "0.4"
 msgstr ""
 
