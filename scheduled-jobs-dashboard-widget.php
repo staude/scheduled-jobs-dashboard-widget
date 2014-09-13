@@ -8,7 +8,7 @@ Domain Path: languages
 Author: Frank Staude
 Version: 0.4
 Author URI: http://www.staude.net/
-Compatibility: WordPress 3.9
+Compatibility: WordPress 4.0
 */
 
 /*  Copyright 2012-2014  Frank Staude  (email : frank@staude.net)
