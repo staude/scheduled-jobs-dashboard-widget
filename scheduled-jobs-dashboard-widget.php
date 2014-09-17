@@ -6,7 +6,7 @@ Description: Implements a Widget to show the Wordpress Cronjobs in the Dashboard
 Text Domain: scheduled-jobs-dashboard-widget
 Domain Path: languages
 Author: Frank Staude
-Version: 0.4
+Version: 0.5
 Author URI: http://www.staude.net/
 Compatibility: WordPress 4.0
 */

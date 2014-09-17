@@ -23,9 +23,9 @@ class z8n_fs_scheduled_jobs_dashboard_widget {
     function __construct() {
         add_action( 'wp_dashboard_setup', array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'registerWidget' ) );
         add_action( 'plugins_loaded',     array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'load_translations' ) );
-        // WP > 3.8   if (wp_version_check($extra_stats)) {
+	    if ( version_compare( get_bloginfo( 'version' ), '3.8') >= 0 ) {
             add_action( 'dashboard_glance_items', array( 'z8n_fs_scheduled_jobs_dashboard_widget', 'dashboard_glance_items' ) );
-        //}
+        }
     }
     
     /**
